@@ -1,17 +1,158 @@
-<section class="pagina-interna">
-<h1>Automatizaciones</h1>
-<div class="automatizacion-grid">
-<div class="card-auto">
-<h2>WhatsApp Automático</h2>
-<p>Respuestas automáticas, derivación y envío de mensajes.</p>
-</div>
-<div class="card-auto">
-<h2>Recordatorios</h2>
-<p>Envío automático de turnos, pagos o avisos.</p>
-</div>
-<div class="card-auto">
-<h2>Formulario + Base de Datos</h2>
-<p>Los clientes dejan sus datos y se guardan automáticamente.</p>
-</div>
-</div>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatizaciones - Amaia Digital</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #00c3ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c3ff;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #000, #111);
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aaa;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #15151c;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00c3ff;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 12px;
+      background: #00c3ff;
+      color: black;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #bbb;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amaia Digital</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="automatizaciones.html">Automatizaciones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Automatizaciones</h2>
+    <p>Sistemas inteligentes para WhatsApp y atención automática.</p>
+  </section>
+
+  <section class="container">
+
+    <div class="card">
+      <span class="tag">WhatsApp Bot</span>
+      <h3>Respuestas Automáticas</h3>
+      <p>Responde mensajes de clientes de forma automática 24/7.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">QR System</span>
+      <h3>Acceso por QR</h3>
+      <p>Generación de códigos QR para conectar clientes al chat.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">CRM</span>
+      <h3>Gestión de Clientes</h3>
+      <p>Organiza conversaciones y seguimiento de clientes automáticamente.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Amaia Digital
+  </footer>
+
+</body>
+</html>
