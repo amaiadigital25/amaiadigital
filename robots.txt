@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://amaiadigital.github.io/amaiadigita/sistmap.xml
+Sitemap: https://amaiadigital.github.io/amaiadigital/sistmap.xml
