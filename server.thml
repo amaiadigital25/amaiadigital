@@ -1,0 +1,15 @@
+<section class="pagina-interna">
+<h1>Servicios de Amaia Digital</h1>
+<div class="servicio">
+<h2>Diseño Web</h2>
+<p>Landing pages, páginas empresariales y tiendas online.</p>
+</div>
+<div class="servicio">
+<h2>Automatización WhatsApp</h2>
+<p>Bot con respuestas automáticas, QR y conexión a clientes.</p>
+</div>
+<div class="servicio">
+<h2>Sistemas y Aplicaciones</h2>
+<p>Paneles, login, administración y aplicaciones personalizadas.</p>
+</div>
+</section>
