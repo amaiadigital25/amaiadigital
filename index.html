@@ -9,10 +9,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 
-body{
-background:#0d0d0d;
-color:#fff;
-}
+body{background:#0d0d0d;color:#fff}
 
 /* HEADER */
 header{
@@ -25,51 +22,60 @@ border-bottom:1px solid #1e90ff;
 }
 
 .logo{
-font-size:26px;
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
 font-weight:bold;
 color:#1e90ff;
+}
+
+.logo img{
+width:40px;
 }
 
 /* HERO */
 .hero{
 text-align:center;
-padding:100px 8%;
+padding:80px 8%;
+}
+
+.hero img{
+width:100%;
+max-width:500px;
+border-radius:20px;
+margin-bottom:25px;
 }
 
 .hero h1{
-font-size:3rem;
-margin-bottom:20px;
+font-size:2.8rem;
+margin-bottom:15px;
 }
 
-.hero span{
-color:#1e90ff;
-}
+.hero span{color:#1e90ff}
 
 .hero p{
 color:#ccc;
-max-width:700px;
+max-width:600px;
 margin:auto;
-margin-bottom:30px;
+margin-bottom:25px;
 }
 
-/* BOTON WHATSAPP */
+/* BOTONES */
 .whatsapp-btn{
 display:inline-flex;
 align-items:center;
 gap:10px;
 background:#25D366;
-color:#fff;
 padding:15px 25px;
 border-radius:10px;
 text-decoration:none;
+color:#fff;
 font-weight:bold;
 }
 
-.whatsapp-btn img{
-width:22px;
-}
+.whatsapp-btn img{width:22px}
 
-/* BOTON DEMO */
 .demo-btn{
 display:inline-block;
 margin-top:15px;
@@ -81,19 +87,14 @@ text-decoration:none;
 }
 
 /* SECTIONS */
-section{
-padding:80px 8%;
-text-align:center;
-}
+section{padding:70px 8%;text-align:center}
 
 .title{
 font-size:2.2rem;
 margin-bottom:30px;
 }
 
-.title span{
-color:#1e90ff;
-}
+.title span{color:#1e90ff}
 
 /* CARDS */
 .cards{
@@ -109,53 +110,29 @@ border-radius:15px;
 border:1px solid #1e90ff33;
 }
 
-/* IMAGENES */
-.img{
-margin:30px auto;
-}
-
-.img img{
+.card img{
 width:100%;
-max-width:500px;
-border-radius:15px;
-}
-
-/* TESTIMONIOS */
-.test{
-background:#111;
-padding:20px;
-border-radius:15px;
-border:1px solid #1e90ff33;
-margin-bottom:15px;
-}
-
-/* CTA */
-.cta{
-background:#1e90ff;
-padding:60px 20px;
-text-align:center;
-}
-
-.cta a{
-background:#25D366;
-color:#fff;
-padding:18px 30px;
 border-radius:10px;
+margin-bottom:10px;
+}
+
+/* SOCIAL */
+.social{
+text-align:center;
+padding:30px;
+}
+
+.social a{
+margin:0 10px;
+color:#1e90ff;
 text-decoration:none;
 font-weight:bold;
-display:inline-flex;
-align-items:center;
-gap:10px;
-}
-
-.cta img{
-width:22px;
 }
 
 /* FOOTER */
 footer{
 text-align:center;
-padding:30px;
+padding:20px;
 color:#777;
 }
 </style>
@@ -165,35 +142,38 @@ color:#777;
 <body>
 
 <header>
-<div class="logo">Amaia Digital</div>
+<div class="logo">
+<img src="img/logo.png">
+Amaia Digital
+</div>
+
+<div>
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a href="https://github.com" target="_blank">GitHub</a>
+</div>
 </header>
 
 <!-- HERO -->
 
 <section class="hero">
+<img src="img/hero.jpg">
+
 <h1>Automatizá tu <span>WhatsApp</span></h1>
 
-<p>
-Respondé automáticamente a tus clientes y aumentá tus ventas sin esfuerzo.
-</p>
+<p>Respondé clientes automáticamente y aumentá tus ventas.</p>
 
 <a href="https://wa.me/5493487210379" class="whatsapp-btn">
-<img src="img/icon.png">
-Hablar por WhatsApp
+<img src="img/whatsapp.png">
+WhatsApp
 </a>
 
 <br>
 
 <a href="https://TU-LINK-NGROK" target="_blank" class="demo-btn">
-Ver demo en vivo
+Ver demo
 </a>
 </section>
-
-<!-- IMAGEN -->
-
-<div class="img">
-<img src="img/banner.jpg">
-</div>
 
 <!-- SERVICIOS -->
 
@@ -203,69 +183,39 @@ Ver demo en vivo
 <div class="cards">
 
 <div class="card">
-<h3>Respuestas automáticas</h3>
-<p>Atendé clientes sin estar conectado.</p>
+<img src="img/automatisacion.jpg">
+<h3>Automatización</h3>
+<p>Respuestas automáticas para tu negocio.</p>
 </div>
 
 <div class="card">
-<h3>Conexión por QR</h3>
-<p>Configuración rápida en segundos.</p>
+<img src="img/app.jpg">
+<h3>Aplicaciones</h3>
+<p>Desarrollo de soluciones digitales.</p>
 </div>
 
 <div class="card">
-<h3>Panel web</h3>
-<p>Control desde cualquier lugar.</p>
-</div>
-
-<div class="card">
-<h3>Atención 24hs</h3>
-<p>No perdés más ventas.</p>
+<img src="img/seo.jpg">
+<h3>SEO</h3>
+<p>Mejor posicionamiento en Google.</p>
 </div>
 
 </div>
-</section>
-
-<!-- IMAGEN -->
-
-<div class="img">
-<img src="img/servicios.jpg">
-</div>
-
-<!-- TESTIMONIOS -->
-
-<section>
-<h2 class="title">Clientes <span>satisfechos</span></h2>
-
-<div class="test">
-<p>"Ahora respondo todo automáticamente y vendo más."</p>
-<b>- Martín</b>
-</div>
-
-<div class="test">
-<p>"Me ahorra tiempo todos los días."</p>
-<b>- Laura</b>
-</div>
-
-<div class="test">
-<p>"Funciona perfecto, lo recomiendo."</p>
-<b>- Carlos</b>
-</div>
-
 </section>
 
 <!-- CTA -->
 
-<div class="cta">
-<h2>Empezá hoy</h2>
+<section>
+<h2 class="title">Empezá hoy</h2>
 
-<a href="https://wa.me/5493487210379">
-<img src="img/icon.png">
-Contactar ahora
+<a href="https://wa.me/5493487210379" class="whatsapp-btn">
+<img src="img/whatsapp.png">
+Contactar
 </a>
-</div>
+</section>
 
 <footer>
-<p>© 2026 Amaia Digital</p>
+© 2026 Amaia Digital
 </footer>
 
 </body>
