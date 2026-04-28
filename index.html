@@ -1,75 +1,234 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amaia Digital | Automatización, WhatsApp y Desarrollo Web</title>
-<meta name="description" content="Amaia Digital crea páginas web, 
-automatizaciones por WhatsApp, sistemas y soluciones digitales para empresas.">
-<meta name="keywords"
-content="Amaia Digital, automatización WhatsApp, páginas web, marketing digital, 
-desarrollo web, chatbot, SEO">
-<meta name="author" content="Amaia Digital">
-<meta property="og:title" content="Amaia Digital">
-<meta property="og:description" content="Automatización, diseño web y 
-soluciones digitales.">
-<meta property="og:image" content="img/logo.png">
-<meta property="og:type" content="website">
-<link rel="stylesheet" href="/amaiadigital/css/style.css">
-<link rel="icon" href="favicon.ico">
-<link rel="manifest" href="manifest.json">
+<title>Amaia Digital - Automatización WhatsApp</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+
+body{background:#fff;color:#333}
+
+/* HEADER */
+header{
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+position:sticky;top:0;background:#fff;
+}
+
+.logo{font-size:26px;font-weight:bold;color:#ff4da6}
+.logo span{color:#6ab8ff}
+
+/* HERO */
+.hero{
+padding:90px 8%;
+text-align:center;
+background:linear-gradient(135deg,#fff,#ffe7f4,#eef7ff);
+}
+
+.hero h1{font-size:3rem;margin-bottom:20px}
+.hero span{color:#ff4da6}
+
+.hero p{
+max-width:700px;
+margin:0 auto 30px;
+color:#555;
+font-size:1.1rem;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+transition:.3s;
+}
+
+.btn-primary{
+background:#ff4da6;color:#fff;margin-right:10px;
+}
+
+.btn-secondary{
+border:2px solid #6ab8ff;color:#6ab8ff;
+}
+
+.btn:hover{transform:translateY(-3px)}
+
+/* SECTIONS */
+section{padding:80px 8%}
+.title{text-align:center;font-size:2.3rem;margin-bottom:40px}
+.title span{color:#ff4da6}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* DEMO */
+.demo{
+text-align:center;
+background:#f8f8ff;
+border-radius:30px;
+padding:60px;
+}
+
+/* TESTIMONIOS */
+.testimonios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.test{
+background:#fff;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+/* CTA */
+.cta{
+text-align:center;
+padding:70px;
+background:linear-gradient(135deg,#ff4da6,#6ab8ff);
+color:#fff;
+border-radius:30px;
+margin:80px 8%;
+}
+
+.cta a{
+background:#fff;
+color:#ff4da6;
+padding:18px 40px;
+border-radius:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{text-align:center;padding:30px;color:#777}
+</style>
+
 </head>
+
 <body>
+
 <header>
-<nav class="navbar">
-<div class="logo">Amaia Digital</div>
-<ul class="menu">
-<li><a href="/amaiadigital/index.html">Inicio</a></li>
-<li><a href="/amaiadigital/servicios.html">Servicios</a></li>
-<li><a href="/amaiadigital/automatizaciones.html">Automatizaciones</a></li>
-<li><a href="/amaiadigital/blog.html">Blog</a></li>
-<li><a href="/amaiadigital/contacto.html">Contacto</a></li>
-</ul>
-<a href="app.html" class="btn-app">Ingresar a la App</a>
-</nav>
+<div class="logo">Amaia <span>Digital</span></div>
 </header>
+
+<!-- HERO -->
+
 <section class="hero">
-<div class="hero-texto">
-2
-<h1>Automatizá tu negocio con Amaia Digital</h1>
-<p>Desarrollamos páginas web, bots de WhatsApp, automatizaciones y sistemas 
-para que tu negocio trabaje solo.</p>
-<div class="hero-botones">
-<a href="https://wa.me/5493487210379" class="btn">Hablar por WhatsApp</a>
-<a href="servicios.html" class="btn-secundario">Ver Servicios</a>
+<h1>Automatizá tu <span>WhatsApp</span> y vendé más</h1>
+
+<p>
+Respondé automáticamente a tus clientes las 24hs, sin perder consultas ni ventas.
+</p>
+
+<a href="https://wa.me/5491126433243" class="btn btn-primary">
+Hablar por WhatsApp
+</a>
+
+<a href="https://TU-LINK-NGROK" target="_blank" class="btn btn-secondary">
+Ver demo en vivo
+</a>
+</section>
+
+<!-- SERVICIOS -->
+
+<section>
+<h2 class="title">¿Qué incluye el <span>servicio</span>?</h2>
+
+<div class="cards">
+<div class="card">
+<h3>🤖 Respuestas automáticas</h3>
+<p>Tu negocio responde solo a cada cliente.</p>
 </div>
+
+<div class="card">
+<h3>📲 Conexión rápida</h3>
+<p>Escaneo de QR y listo en segundos.</p>
 </div>
-<div class="hero-img">
-<img src="img/hero.jpg" alt="Amaia Digital Automatización">
+
+<div class="card">
+<h3>🌐 Panel web</h3>
+<p>Acceso desde cualquier lugar.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Atención 24hs</h3>
+<p>No perdés más clientes.</p>
+</div>
 </div>
 </section>
-<section class="cards">
-<div class="card">
-<h2>Páginas Web</h2>
-<p>Diseño moderno, adaptable a celular y optimizado para Google.</p>
-</div>
-<div class="card">
-<h2>WhatsApp Automático</h2>
-<p>Respondé clientes automáticamente las 24 horas.</p>
-</div>
-<div class="card">
-<h2>SEO y Posicionamiento</h2>
-<p>Tu negocio visible en Google y redes sociales.</p>
+
+<!-- DEMO -->
+
+<section>
+<h2 class="title">Probalo <span>en vivo</span></h2>
+
+<div class="demo">
+<p style="margin-bottom:20px;">
+Entrá al demo y conectá tu WhatsApp en segundos.
+</p>
+
+<a href="https://TU-LINK-NGROK" target="_blank" class="btn btn-primary">
+Abrir demo
+</a>
 </div>
 </section>
-<section class="cta">
-<h2>¿Querés más clientes?</h2>
-<p>Creá tu página y automatizá tu negocio hoy.</p>
-<a href="contacto.html" class="btn">Solicitar Presupuesto</a>
+
+<!-- TESTIMONIOS -->
+
+<section>
+<h2 class="title">Clientes <span>satisfechos</span></h2>
+
+<div class="testimonios">
+
+<div class="test">
+<p>"Aumenté las ventas porque responde solo."</p>
+<b>- Martín (Taller)</b>
+</div>
+
+<div class="test">
+<p>"Ahora atiendo clientes todo el día sin estar conectado."</p>
+<b>- Laura (Tienda)</b>
+</div>
+
+<div class="test">
+<p>"Muy fácil de usar y funciona perfecto."</p>
+<b>- Carlos (Seguros)</b>
+</div>
+
+</div>
 </section>
+
+<!-- CTA FINAL -->
+
+<div class="cta">
+<h2>Empezá hoy mismo</h2>
+
+<a href="https://wa.me/5493487210379">
+Quiero automatizar mi negocio
+</a>
+</div>
+
 <footer>
-<p>© 2026 Amaia Digital - Todos los derechos reservados</p>
+<p>© 2026 Amaia Digital</p>
 </footer>
-<script src="js/main.js"></script>
+
 </body>
 </html>
