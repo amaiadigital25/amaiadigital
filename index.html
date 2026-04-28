@@ -4,121 +4,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amaia Digital - Automatización WhatsApp</title>
+<title>Amaia Digital</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 
-body{background:#fff;color:#333}
+body{
+background:#0d0d0d;
+color:#fff;
+}
 
 /* HEADER */
 header{
-display:flex;justify-content:space-between;align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 padding:20px 8%;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-position:sticky;top:0;background:#fff;
+background:#111;
+border-bottom:1px solid #1e90ff;
 }
 
-.logo{font-size:26px;font-weight:bold;color:#ff4da6}
-.logo span{color:#6ab8ff}
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#1e90ff;
+}
 
 /* HERO */
 .hero{
-padding:90px 8%;
 text-align:center;
-background:linear-gradient(135deg,#fff,#ffe7f4,#eef7ff);
+padding:100px 8%;
 }
 
-.hero h1{font-size:3rem;margin-bottom:20px}
-.hero span{color:#ff4da6}
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#1e90ff;
+}
 
 .hero p{
+color:#ccc;
 max-width:700px;
-margin:0 auto 30px;
-color:#555;
-font-size:1.1rem;
+margin:auto;
+margin-bottom:30px;
 }
 
-.btn{
-padding:15px 30px;
-border-radius:12px;
+/* BOTON WHATSAPP */
+.whatsapp-btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+background:#25D366;
+color:#fff;
+padding:15px 25px;
+border-radius:10px;
 text-decoration:none;
 font-weight:bold;
+}
+
+.whatsapp-btn img{
+width:22px;
+}
+
+/* BOTON DEMO */
+.demo-btn{
 display:inline-block;
-transition:.3s;
+margin-top:15px;
+border:2px solid #1e90ff;
+color:#1e90ff;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
 }
-
-.btn-primary{
-background:#ff4da6;color:#fff;margin-right:10px;
-}
-
-.btn-secondary{
-border:2px solid #6ab8ff;color:#6ab8ff;
-}
-
-.btn:hover{transform:translateY(-3px)}
 
 /* SECTIONS */
-section{padding:80px 8%}
-.title{text-align:center;font-size:2.3rem;margin-bottom:40px}
-.title span{color:#ff4da6}
+section{
+padding:80px 8%;
+text-align:center;
+}
+
+.title{
+font-size:2.2rem;
+margin-bottom:30px;
+}
+
+.title span{
+color:#1e90ff;
+}
 
 /* CARDS */
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:#fff;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-/* DEMO */
-.demo{
-text-align:center;
-background:#f8f8ff;
-border-radius:30px;
-padding:60px;
-}
-
-/* TESTIMONIOS */
-.testimonios{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.test{
-background:#fff;
+.card{
+background:#111;
 padding:20px;
 border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
+border:1px solid #1e90ff33;
+}
+
+/* IMAGENES */
+.img{
+margin:30px auto;
+}
+
+.img img{
+width:100%;
+max-width:500px;
+border-radius:15px;
+}
+
+/* TESTIMONIOS */
+.test{
+background:#111;
+padding:20px;
+border-radius:15px;
+border:1px solid #1e90ff33;
+margin-bottom:15px;
 }
 
 /* CTA */
 .cta{
+background:#1e90ff;
+padding:60px 20px;
 text-align:center;
-padding:70px;
-background:linear-gradient(135deg,#ff4da6,#6ab8ff);
-color:#fff;
-border-radius:30px;
-margin:80px 8%;
 }
 
 .cta a{
-background:#fff;
-color:#ff4da6;
-padding:18px 40px;
-border-radius:15px;
+background:#25D366;
+color:#fff;
+padding:18px 30px;
+border-radius:10px;
 text-decoration:none;
 font-weight:bold;
+display:inline-flex;
+align-items:center;
+gap:10px;
 }
 
-footer{text-align:center;padding:30px;color:#777}
+.cta img{
+width:22px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
 </style>
 
 </head>
@@ -126,103 +165,102 @@ footer{text-align:center;padding:30px;color:#777}
 <body>
 
 <header>
-<div class="logo">Amaia <span>Digital</span></div>
+<div class="logo">Amaia Digital</div>
 </header>
 
 <!-- HERO -->
 
 <section class="hero">
-<h1>Automatizá tu <span>WhatsApp</span> y vendé más</h1>
+<h1>Automatizá tu <span>WhatsApp</span></h1>
 
 <p>
-Respondé automáticamente a tus clientes las 24hs, sin perder consultas ni ventas.
+Respondé automáticamente a tus clientes y aumentá tus ventas sin esfuerzo.
 </p>
 
-<a href="https://wa.me/5491126433243" class="btn btn-primary">
+<a href="https://wa.me/5493487210379" class="whatsapp-btn">
+<img src="img/icon.png">
 Hablar por WhatsApp
 </a>
 
-<a href="https://TU-LINK-NGROK" target="_blank" class="btn btn-secondary">
+<br>
+
+<a href="https://TU-LINK-NGROK" target="_blank" class="demo-btn">
 Ver demo en vivo
 </a>
 </section>
 
+<!-- IMAGEN -->
+
+<div class="img">
+<img src="img/banner.jpg">
+</div>
+
 <!-- SERVICIOS -->
 
 <section>
-<h2 class="title">¿Qué incluye el <span>servicio</span>?</h2>
+<h2 class="title">Nuestros <span>servicios</span></h2>
 
 <div class="cards">
+
 <div class="card">
-<h3>🤖 Respuestas automáticas</h3>
-<p>Tu negocio responde solo a cada cliente.</p>
+<h3>Respuestas automáticas</h3>
+<p>Atendé clientes sin estar conectado.</p>
 </div>
 
 <div class="card">
-<h3>📲 Conexión rápida</h3>
-<p>Escaneo de QR y listo en segundos.</p>
+<h3>Conexión por QR</h3>
+<p>Configuración rápida en segundos.</p>
 </div>
 
 <div class="card">
-<h3>🌐 Panel web</h3>
-<p>Acceso desde cualquier lugar.</p>
+<h3>Panel web</h3>
+<p>Control desde cualquier lugar.</p>
 </div>
 
 <div class="card">
-<h3>⚡ Atención 24hs</h3>
-<p>No perdés más clientes.</p>
+<h3>Atención 24hs</h3>
+<p>No perdés más ventas.</p>
 </div>
+
 </div>
 </section>
 
-<!-- DEMO -->
+<!-- IMAGEN -->
 
-<section>
-<h2 class="title">Probalo <span>en vivo</span></h2>
-
-<div class="demo">
-<p style="margin-bottom:20px;">
-Entrá al demo y conectá tu WhatsApp en segundos.
-</p>
-
-<a href="https://TU-LINK-NGROK" target="_blank" class="btn btn-primary">
-Abrir demo
-</a>
+<div class="img">
+<img src="img/servicios.jpg">
 </div>
-</section>
 
 <!-- TESTIMONIOS -->
 
 <section>
 <h2 class="title">Clientes <span>satisfechos</span></h2>
 
-<div class="testimonios">
-
 <div class="test">
-<p>"Aumenté las ventas porque responde solo."</p>
-<b>- Martín (Taller)</b>
+<p>"Ahora respondo todo automáticamente y vendo más."</p>
+<b>- Martín</b>
 </div>
 
 <div class="test">
-<p>"Ahora atiendo clientes todo el día sin estar conectado."</p>
-<b>- Laura (Tienda)</b>
+<p>"Me ahorra tiempo todos los días."</p>
+<b>- Laura</b>
 </div>
 
 <div class="test">
-<p>"Muy fácil de usar y funciona perfecto."</p>
-<b>- Carlos (Seguros)</b>
+<p>"Funciona perfecto, lo recomiendo."</p>
+<b>- Carlos</b>
 </div>
 
-</div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA -->
 
 <div class="cta">
-<h2>Empezá hoy mismo</h2>
+<h2>Empezá hoy</h2>
 
 <a href="https://wa.me/5493487210379">
-Quiero automatizar mi negocio
+<img src="img/icon.png">
+Contactar ahora
 </a>
 </div>
 
